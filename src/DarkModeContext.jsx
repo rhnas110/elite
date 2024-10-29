@@ -7,7 +7,6 @@ const DarkModeContext = createContext();
 export const useDarkMode = () => useContext(DarkModeContext);
 
 // Context provider component
-// eslint-disable-next-line react/prop-types
 export const DarkModeProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(() => {
     // Get initial value from localStorage or default to false
@@ -17,13 +16,12 @@ export const DarkModeProvider = ({ children }) => {
   useEffect(() => {
     const html = document.documentElement; // Select <html> element
     if (darkMode) {
-      html.classList.add('dark');
+      html.classList.add("light-dark");
     } else {
-      html.classList.remove('dark');
+      html.classList.remove("light-dark");
     }
-    localStorage.setItem('darkMode', darkMode.toString());
+    localStorage.setItem("darkMode", darkMode.toString());
   }, [darkMode]);
-  
 
   const toggleDarkMode = () => {
     setDarkMode((prevMode) => !prevMode);

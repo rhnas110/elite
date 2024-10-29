@@ -2,33 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Light mode (default) */
-body {
-  @apply bg-white text-black;
+
+/* Base dark mode style */
+.light-dark {
+  --background-color: #1e1e1e; /* Softer dark background */
+  --text-color: #e0e0e0; /* Light gray text for readability */
+  --accent-color: #5a9; /* Softer accent color */
+  --secondary-background: #2a2a2a; /* Secondary softer dark */
+  --border-color: #444; /* Muted borders for subtle contrast */
 }
 
-/* Dark mode */
-.dark body {
-  @apply bg-black text-white;
-}
-/* Scrollbar styles (Light Mode) */
-body::-webkit-scrollbar {
-  width: 12px;
+/* Apply colors to elements */
+.light-dark body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
-body::-webkit-scrollbar-thumb {
-  @apply bg-gray-600; /* Light mode thumb */
+.light-dark header, .light-dark footer, .light-dark .card {
+  background-color: var(--secondary-background);
+  color: var(--text-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-body::-webkit-scrollbar-track {
-  @apply bg-gray-300; /* Light mode track */
+.light-dark a {
+  color: var(--accent-color);
 }
 
-/* Scrollbar styles (Dark Mode) */
-.dark body::-webkit-scrollbar-thumb {
-  @apply bg-white; /* Dark mode thumb */
+.light-dark button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.dark body::-webkit-scrollbar-track {
-  @apply bg-gray-800; /* Dark mode track */
+.light-dark button:hover {
+  background-color: #4a8; /* Slightly darker shade on hover */
+  color: #fff;
+}
+
+.light-dark input, .light-dark textarea {
+  background-color: var(--secondary-background);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
 }
