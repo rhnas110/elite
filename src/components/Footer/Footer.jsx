@@ -98,7 +98,7 @@ function Footer() {
             . All Rights Reserved.
           </span>
           <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-            <Link to="#">
+            <Link to="/github">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"
@@ -114,7 +114,7 @@ function Footer() {
               </svg>
               <span className="sr-only">Facebook page</span>
             </Link>
-            <Link to="#">
+            <Link to="/github">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"
@@ -126,7 +126,7 @@ function Footer() {
               </svg>
               <span className="sr-only">Discord community</span>
             </Link>
-            <Link to="#">
+            <Link to="/github">
               <svg
                 viewBox="0 0 309.309 300.25"
                 className="w-4 h-4"
@@ -139,7 +139,7 @@ function Footer() {
               </svg>
               <span className="sr-only">Twitter page</span>
             </Link>
-            <Link to="#">
+            <Link to="/github">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"
@@ -155,7 +155,7 @@ function Footer() {
               </svg>
               <span className="sr-only">GitHub account</span>
             </Link>
-            <Link to="#">
+            <Link to="/github">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"

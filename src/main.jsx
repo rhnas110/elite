@@ -13,7 +13,7 @@ import About from "./components/About/About.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import User from "./components/User/User.jsx";
 import Github from "./components/Github/Github.jsx";
-import Projects from "./components/Projects/projects.jsx";
+import Projects from "./components/Projects/Projects.jsx";
 import { DarkModeProvider } from "./DarkModeContext.jsx";
 
 // const router = createBrowserRouter([
